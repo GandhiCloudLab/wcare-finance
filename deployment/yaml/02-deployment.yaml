@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: classic-wcarefinance
-  namespace: classic-sample-ns
+  name: wcarefinance
+  namespace: wcare-ns
   labels:
-    app: classic-sample-application
+    app: wcare-application
     subname: wcarefinance
 spec:
   selector:
     matchLabels:
-      app: classic-sample-application
+      app: wcare-application
       subname: wcarefinance
   replicas: 1
   template:
     metadata:
       labels:
-        app: classic-sample-application
+        app: wcare-application
         subname: wcarefinance
     spec:
       containers:
         - name: container-wcarefinance
-          image: "gandhicloudlab/classic-wcarefinance:latest"
+          image: "gandhicloudlab/wcarefinance:latest"
           imagePullPolicy: Always
           ports:
             - name: my-http
-              containerPort: 9030
+              containerPort: 9022
