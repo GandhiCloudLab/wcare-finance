@@ -20,8 +20,8 @@ spec:
     spec:
       containers:
         - name: container-wcarefinance
-          # image: "image-registry.openshift-image-registry.svc:5000/wcare-ns/wcarefinance:latest"
-          image: "gandhicloudlab/wcarefinance:latest"
+          image: "image-registry.openshift-image-registry.svc:5000/wcare-ns/wcarefinance:latest"
+          # image: "gandhicloudlab/wcarefinance:latest"
           imagePullPolicy: Always
           ports:
             - name: my-http

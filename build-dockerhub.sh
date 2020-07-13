@@ -2,7 +2,7 @@
 
 echo "build Started ...."
 
-docker build -f Dockerfile -t gandhicloudlab/wcarefinance:latest . 
+docker build -f Dockerfile -t gandhicloudlab/wcarefinance:latest . --no-cache
 
 # docker login -u gandhicloudlab
 
